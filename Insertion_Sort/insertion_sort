@@ -1,0 +1,17 @@
+#pseudo code for insertion sort for integer values
+
+int a[] = read values
+
+#insertion logic
+
+for j = 2 to a.length
+	#storing value in a variable key
+	
+	key = a[j];
+	i = i-1;
+	
+	while i > 0 && a[i] > key
+		a[i+1] = a[i];
+		i--;
+	
+	a[i+1] = key; 
